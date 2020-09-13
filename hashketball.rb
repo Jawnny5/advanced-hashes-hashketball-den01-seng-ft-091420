@@ -176,4 +176,3 @@ when team_name == game_hash[:away][:team_name]
   jersey_numbers << game_hash[:away][:players][:number]
 end
 end
-  
