@@ -169,12 +169,6 @@ def team_names
 end
 
 def player_numbers(team_name)
-  array = []
-   game_hash.each do |location, team_data|
-    if team_data[:team_name] == team_name
-      team_data[:players].each do |player_name, value|
-        array.push(value[:number])
-      end
-    end
+  team_names(team)[:players].map do |key, value|
+    value[:number]
   end
-end
