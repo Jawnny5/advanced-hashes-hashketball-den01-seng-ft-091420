@@ -170,9 +170,10 @@ end
 
 def player_numbers(team_name)
   jersey_numbers = []
-when team_name == game_hash[:home][:team_name]
-  jersey_numbers << game_hash[:home][:players][:number]
-when team_name == game_hash[:away][:team_name]
-  jersey_numbers << game_hash[:away][:players][:number]
-end
+  case team_name
+  when team_name == game_hash[:home][:team_name]
+    jersey_numbers << game_hash[:home][:players][:number]
+  when team_name == game_hash[:away][:team_name]
+    jersey_numbers << game_hash[:away][:players][:number]
+  end
 end
