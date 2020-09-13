@@ -173,8 +173,8 @@ def player_numbers(team_name)
 
   case team
   when "Brooklyn Nets"
-    game_hash[:home][:players][:number]
+    puts game_hash[:home][:players][:number]
   when "Charlotte Hornets"
-    game_hash[:away][:players][:number]
+     puts game_hash[:away][:players][:number]
   end
 end
