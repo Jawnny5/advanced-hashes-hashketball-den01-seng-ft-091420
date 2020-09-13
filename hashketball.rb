@@ -169,9 +169,8 @@ def team_names
 end
 
 def player_numbers(team_name)
-  find_numbers = team_stats.find {|team| team.fetch(:team_name) == team_name}
-  find_numbers[:players].collect do |player|
-    player[:number]
+    team_name == game_hash[:home][:team_name] ?
+    game_hash[:home][:players][:number] :
+    game_hash[:away][:players][:number]
   end
-end
-player_numbers("Brooklyn Nets")
+    
