@@ -169,8 +169,9 @@ def team_names
 end
 
 def player_numbers(team_name)
+  jersey_numbers = []
   if game_hash[:team_info][:team_name] == team_name
   game_hash[:team_info][:players].map do |key, value|
-     puts value[:number]
+    jersey_numbers = value[:number]
   end
 end
