@@ -175,4 +175,5 @@ def player_numbers(team_name)
       jersey_numbers.push
     end
   end
+  jersey_numbers
 end
