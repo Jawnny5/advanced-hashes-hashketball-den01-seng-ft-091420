@@ -169,8 +169,9 @@ def team_names
 end
 
 def player_numbers(team_name)
-  jersey_numbers = []
-  team_names(team_name)[:players].map do |key, value|
-    value[:number]
-  end
-end
+  find_numbers = team_stats.find {|team| team.fetch(:team_name) == team_name}
+  find_numbers[:players].collect do |player| 
+    player[:number]
+  end 
+end 
+player_numbers("Brooklyn Nets")
