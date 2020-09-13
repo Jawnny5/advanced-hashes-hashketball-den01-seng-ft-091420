@@ -176,4 +176,5 @@ def player_numbers(team_name)
   when team_name = "Charlotte Hornets"
     team_numbers = game_hash[:team_info][:number]
   end
+  team_numbers
 end
