@@ -172,4 +172,5 @@ def player_numbers(team_name)
   jersey_numbers = []
   get_team_names(team)[:players].map do |key, value|
     jersey_numbers << value[:number]
+  end
 end
