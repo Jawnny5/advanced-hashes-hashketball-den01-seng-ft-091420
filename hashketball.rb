@@ -172,3 +172,4 @@ def player_numbers(team_name)
   game_hash.each do |home_away, team_info|
     team_info[:number]
 end
+end
