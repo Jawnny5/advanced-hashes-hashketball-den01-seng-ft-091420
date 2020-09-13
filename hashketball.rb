@@ -181,4 +181,3 @@ def player_stats(player)
     team_info[:players].each do |player_n|
       if player_n.has_value?(player)
         return player_n
-    
