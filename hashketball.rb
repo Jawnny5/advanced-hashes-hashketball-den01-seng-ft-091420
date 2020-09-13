@@ -169,7 +169,7 @@ def team_names
 end
 
 def player_numbers(team_name)
-  team_names(team)[:players].map do |key, value|
+  team_names(team_name)[:players].map do |key, value|
     value[:number]
   end
 end
