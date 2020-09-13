@@ -172,3 +172,4 @@ def player_numbers(team_name)
   team_names(team)[:players].map do |key, value|
     value[:number]
   end
+end
