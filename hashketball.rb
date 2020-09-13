@@ -185,7 +185,7 @@ def player_stats(player_n)
     end
   end
 end
-        
-        
-      
+
+
+
         
