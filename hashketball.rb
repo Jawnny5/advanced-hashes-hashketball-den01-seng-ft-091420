@@ -177,5 +177,3 @@ def player_numbers(team_name)
     team_numbers = game_hash[:team_info][:number]
   end
 end
-
-
