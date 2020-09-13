@@ -170,7 +170,7 @@ end
 
 def player_numbers(team_name)
   jersey_numbers = []
-  team_names(team_name)[:players].map do |key, value|
+  team_names(team_name)[:players].map do |key, value| binding.pry
     value[:number]
   end
 end
