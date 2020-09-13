@@ -170,7 +170,6 @@ end
 
 def player_numbers(team_name)
   jersey_numbers = []
-  binding.pry
   team_names(team_name)[:players].map do |key, value|
     value[:number]
   end
