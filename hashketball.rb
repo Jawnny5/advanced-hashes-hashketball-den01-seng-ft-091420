@@ -171,7 +171,7 @@ end
 def player_numbers(team_name)
   team = ""
 
-  case
+  case team
   when "Brooklyn Nets"
     game_hash[:home][:players][:number]
   when "Charlotte Hornets"
