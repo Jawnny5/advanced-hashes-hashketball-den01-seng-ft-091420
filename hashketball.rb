@@ -169,11 +169,12 @@ def team_names
 end
 
 def player_numbers(team_name)
-  team_nums = 0
-  game_hash.each do |home_away, team_info|
-    team_info[:players].map do |stats|
-    team_nums =  stats[:number]
-    end
+  team = ""
+
+  case
+  when "Brooklyn Nets"
+    game_hash[:home][:players][:number]
+  when "Charlotte Hornets"
+    game_hash[:away][:players][:number]
   end
-  team_nums
 end
