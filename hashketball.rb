@@ -169,12 +169,11 @@ def team_names
 end
 
 def player_numbers(team_name)
-  team_name = gets.chomp
-  case team_name
-  when team_name = "Brooklyn Nets"
-    team_numbers = game_hash[:team_info][:number]
-  when team_name = "Charlotte Hornets"
-    team_numbers = game_hash[:team_info][:number]
+  jersey_numbers = ""
+game_hash.each do |home_away, team_info|
+  team info.each do |att, val|
+    if val[:team_name] == team_name
+      jersey_numbers.push
+    end
   end
-  team_numbers
 end
