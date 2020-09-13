@@ -169,11 +169,13 @@ def team_names
 end
 
 def player_numbers(team_name)
-
-  case team_name
-  when "Brooklyn Nets"
-    puts game_hash[:home][:players][:number]
-  when "Charlotte Hornets"
-     puts game_hash[:away][:players][:number]
+  array = []
+   game_hash.each do |location, team_data|
+    if team_data[:team_name] == name
+      team_data[:players].each { |player_name, value|
+        array << value[:number]
+      end
+    end
   end
+  array
 end
