@@ -178,9 +178,9 @@ end
 
 def player_stats(player)
   game_hash.each do |key, value|
-  value[:players].each do |player_name|
+  value[:players].each do |player_n|
     if player == player_name[:player_name]
-    return :player_name
+    return player_n[:player_name]
     end
     end
     end
