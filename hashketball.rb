@@ -169,10 +169,8 @@ def team_names
 end
 
 def player_numbers(team_name)
-  jersey_numbers = []
-  game_hash.each do |home_away, team_info|
-  team_info[:players].each do |stats[1]|
-   jersey_numbers.push
- end
- end
- end
+  team_names(team_name)[:players].map do |key, value|
+    value[:number]
+  end
+end
+  
