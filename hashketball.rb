@@ -169,10 +169,9 @@ def team_names
 end
 
 def player_numbers(team_name)
-  player_numbers(team_name)
     jersey_numbers = []
     game_hash.each do |team, team_info|
-      if team_lookup == team_info[:team_name]
+      if team_name == team_info[:team_name]
         team_info.each do |key, value|
           # binding.pry
           if key == :players
