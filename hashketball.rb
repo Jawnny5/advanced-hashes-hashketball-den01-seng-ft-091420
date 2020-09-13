@@ -170,7 +170,7 @@ end
 
 def player_numbers(team_name)
   game_hash.each do |home_away, team_info|
-    team_info[:players].each do |stats|
+    team_info[:players].map do |stats|
       stats[:number]
     end
   end
